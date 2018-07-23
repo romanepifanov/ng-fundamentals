@@ -2,25 +2,16 @@ import { Component } from "../../../node_modules/@angular/core";
 
 @Component({
     selector:   'events-list',
-    template:   `<div>
-                    <h1>Upcoming Angular Events</h1>
-                    <hr>
-                    <div class="well hoverwell thumbnail">
-                        <h2>{{event.name}}</h2>
-                        <div>Date: {{event.date}}</div>
-                        <div>Time: {{event.time}}</div>
-                        <div>Price: \${{event.price}}</div>
-                        <div>
-                            <span>Lacotion: {{event.location.address}}</span>
-                            <span>&nbsp</span>
-                            <span>{{event.location.city}}, {{event</span>
-                        </div>
-                    </div>
-                </div>
-                `
+    template: `
+            <div>
+                <h1>Upcoming Angular Events</h1>
+                <hr>
+                <event-thumbnail #thumbnail [event]="event1"></event-thumbnail>
+            </div>
+            `
 })
 export class EventsListComponent {
-    event ={
+    event1 ={
         id: 1,
         name: 'Angular Connect',
         date: '26/9/2036',
@@ -32,5 +23,5 @@ export class EventsListComponent {
             city: 'London',
             country: 'England'
         }
-    }
+    } 
 }
