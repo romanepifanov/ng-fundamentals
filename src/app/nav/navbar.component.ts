@@ -5,6 +5,7 @@ import { Component } from "@angular/core";
     ,templateUrl: './navbar.component.html'
     ,styles:[`
             .nav.navbar-nav { font-size: 15px; }
+            .active { color: #f97924 !important;}
             #serachForm { margin-right: 100px; }
             @media (max-width: 1200px) { #searchForm { display: none }}
     `]
@@ -12,4 +13,4 @@ import { Component } from "@angular/core";
 })
 export class NavBarComponent {
 
-}
+} 
