@@ -5,10 +5,14 @@ import { AuthService } from "./auth.service";
 
 @Component({
     templateUrl: './login.component.html'
+    ,styles: [`
+        em { float: right; color: #e05c65; padding-left: 10px; }
+    `]
 })
 export class LoginComponent {
     password: any;
     userName: any;
+    mouseoverLogin: boolean;
 
     constructor(private authService: AuthService, private router:Router){
 
