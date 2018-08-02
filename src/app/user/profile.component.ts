@@ -14,13 +14,13 @@ import { AuthService } from './auth.service';
 })
 export class ProfileComponent implements OnInit {
   profileForm:FormGroup;
-  private firstName: FormControl;C
+  private firstName: FormControl;
   private lastName: FormControl;
   constructor(private authService:AuthService, private router:Router){
 
   }
 
-  ngOnInit(){
+  ngOnInit() {
     this.firstName = new FormControl(this.authService.currentUser.firstName, [Validators.required, Validators.pattern('[a-zA-z].*')]);
     this.lastName = new FormControl(this.authService.currentUser.lastName, Validators.required);
 
