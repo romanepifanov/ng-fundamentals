@@ -16,6 +16,8 @@ import { Error404Component } from './errors/404.component';
 import { EventRouteActivator } from './events/event-details/event-route-activator.service';
 import { EventsListResolver } from './events/events-list-resolver.service';
 import { AuthService } from './user/auth.service';
+import { CreateSessionComponent } from './events/event-details';
+import { SessionsListComponent } from './events/event-details/sessions-list.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { AuthService } from './user/auth.service';
     ,EventDetailsComponent
     ,CreateEventComponent
     ,Error404Component
+    ,CreateSessionComponent
+    ,SessionsListComponent
   ],
   providers: [
     EventService
