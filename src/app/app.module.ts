@@ -18,6 +18,8 @@ import { EventsListResolver } from './events/events-list-resolver.service';
 import { AuthService } from './user/auth.service';
 import { CreateSessionComponent } from './events/event-details';
 import { SessionsListComponent } from './events/event-details/sessions-list.component';
+import { CollapsibleWellComponent } from './common/collapsible-well.component';
+import { DurationPipe } from './events/shared/duration.pipe';
 
 
 @NgModule({
@@ -37,6 +39,8 @@ import { SessionsListComponent } from './events/event-details/sessions-list.comp
     ,Error404Component
     ,CreateSessionComponent
     ,SessionsListComponent
+    ,CollapsibleWellComponent
+    ,DurationPipe
   ],
   providers: [
     EventService
