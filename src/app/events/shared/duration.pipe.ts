@@ -8,10 +8,10 @@ export class DurationPipe implements PipeTransform {
   
   transform(value: number): string {
     switch(value) {
-      case 1: return  'Half Hour';  break;
-      case 2: return  '1 Hour'; break;
-      case 3: return  'Half Day'; break;
-      case 4: return  'Full Day'; break;
+      case 1: return  'Half Hour';
+      case 2: return  '1 Hour';
+      case 3: return  'Half Day';
+      case 4: return  'Full Day';
       default: return value.toString();
     }
   }
